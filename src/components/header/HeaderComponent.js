@@ -10,6 +10,7 @@ class HeaderComponent extends Component {
         super();
         this.scrollToConsens = this.scrollToConsens.bind(this);
         this.scrollToHome = this.scrollToHome.bind(this);
+        this.scrollToWoStehenSie = this.scrollToWoStehenSie.bind(this);
     }
 
     scrollToHome() {
@@ -20,6 +21,11 @@ class HeaderComponent extends Component {
     scrollToConsens() {
         const consensSection = document.getElementById('consensComponent');
         this.scroller.scrollToResolver(consensSection, true);
+    }
+
+    scrollToWoStehenSie() {
+        const WoStehenSieSection = document.getElementById('WoStehenSieComponenent');
+        this.scroller.scrollToResolver(WoStehenSieSection, true);
     }
 
     render() {
@@ -33,7 +39,7 @@ class HeaderComponent extends Component {
                         <ul id="headerDesktopMenu" className="hidden-xs hidden-sm hidden-md">
                             <li id="contactButton">Kontakt</li>
                             <li>Dienstleistungen</li>
-                            <li>Wo stehen Sie?</li>
+                            <li onClick={this.scrollToWoStehenSie}>Wo stehen Sie?</li>
                             <li onClick={this.scrollToConsens}>ConSenS</li>
                             <li onClick={this.scrollToHome}>Home</li>
                         </ul>

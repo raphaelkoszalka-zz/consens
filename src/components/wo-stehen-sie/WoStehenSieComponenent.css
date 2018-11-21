@@ -1,0 +1,41 @@
+#WoStehenSieComponenent {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #fff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fff, #efefef); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fff, #efefef); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#WoStehenSieComponenent .col-md-6 {
+    height: 55%;
+}
+
+#removePadding {
+    padding-left: 0;
+}
+
+#spring {
+    background: #7AB317;
+    width: 100%;
+    height: 100%;
+}
+
+#summer {
+    background: #FA6900;
+    width: 100%;
+    height: 100%;
+}
+
+#autumn {
+    background: #BF4D28;
+    width: 100%;
+    height: 100%;
+}
+
+#winter {
+    background: #8AC7DE;
+    width: 100%;
+    height: 100%;
+}

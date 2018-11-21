@@ -30,12 +30,16 @@
     margin-left: 5.5%;
     background: url("../../images/about/consens-mountains.jpg") center center;
     display: inline-block;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 #second-pic {
     height: 300px;
     width: 35%;
     background: url("../../images/about/consens-eagle.jpeg") center center;
+    -webkit-background-size: cover;
+    background-size: cover;    
     position: absolute;
     bottom: 0;
     right: 15%;

@@ -1,0 +1,43 @@
+#headerWrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+#headerComponent {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -37.5%;
+    width: inherit;
+    height: 70px;
+    background-color: #FFF;
+    z-index: 1000;
+}
+#consensBrand {
+    max-height: 50px;
+    margin-top: 10px;
+}
+#headerDesktopMenu {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+}
+#headerDesktopMenu li {
+    display: inline-block;
+    float: right;
+    color: #343434;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+#headerDesktopMenu li:hover {
+    cursor: pointer;
+    background: #0F55B4;
+    color: #FFF !important;
+}
+#contactButton {
+    background: #0F55B4;
+    color: #FFF !important;
+}

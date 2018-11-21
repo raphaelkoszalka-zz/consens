@@ -1,0 +1,46 @@
+#coverSection {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    position: relative;
+}
+
+#cover {
+    width: 75%;
+    height: 75%;
+    background: url('../../images/covers/countryside.jpg') center center;
+    background-size: cover;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#coverOverlay {
+    background: radial-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.5));
+    border: 2px solid #EFEFEF;
+    width: 75%;
+    height: 75.2%;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    margin-left: -37.5%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#coverShadow {
+    background-color: #0F55B4;
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    z-index: -1;
+    bottom: 8%;
+    right: 10%;
+    box-shadow: 5px 5px rgba(15,85,180, 0.4),
+    10px 10px rgba(15,85,180, 0.3)
+}

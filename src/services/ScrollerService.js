@@ -1,15 +1,24 @@
 class Scroller {
 
-    scrollToResolver(elem) {
-        const jump = parseInt(elem.getBoundingClientRect().top *.2);
+    scrollToResolver(elem, top) {
+
+        let jump = parseInt(elem.getBoundingClientRect().top * .2) + 2;
+
+        if(top) {
+            jump -= 2;
+        }
+
         document.body.scrollTop += jump + 2.5;
         document.documentElement.scrollTop += jump + 2.5;
+
         if (!elem.lastjump || elem.lastjump > Math.abs(jump)) {
             elem.lastjump = Math.abs(jump);
             setTimeout(() => this.scrollToResolver(elem), 45);
-        } else {
-            elem.lastjump = null;
+            return;
         }
+
+        elem.lastjump = null;
+
     }
 
 }

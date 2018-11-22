@@ -30,22 +30,26 @@ class HeaderComponent extends Component {
 
     render() {
         return (
-            <div id="headerWrapper">
-                <div id="headerComponent">
-                    <div className="col-xs-3">
-                        <img src="./consensBrand.png" id="consensBrand" alt=""/>
-                    </div>
-                    <div className="col-xs-9">
-                        <ul id="headerDesktopMenu" className="hidden-xs hidden-sm hidden-md">
-                            <li id="contactButton">Kontakt</li>
-                            <li>Dienstleistungen</li>
-                            <li onClick={this.scrollToWoStehenSie}>Wo stehen Sie?</li>
-                            <li onClick={this.scrollToConsens}>ConSenS</li>
-                            <li onClick={this.scrollToHome}>Home</li>
-                        </ul>
+            <header>
+                <div id="headerBackground">
+                    <div id="headerWrapper">
+                        <div id="headerComponent">
+                            <div className="col-xs-3">
+                                <img src="./consensBrand.png" id="consensBrand" alt=""/>
+                            </div>
+                            <div className="col-xs-9">
+                                <ul id="headerDesktopMenu" className="hidden-xs hidden-sm hidden-md">
+                                    <li id="contactButton">Kontakt</li>
+                                    <li>Dienstleistungen</li>
+                                    <li onClick={this.scrollToWoStehenSie}>Wo stehen Sie?</li>
+                                    <li onClick={this.scrollToConsens}>ConSenS</li>
+                                    <li onClick={this.scrollToHome}>Home</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </header>
         );
     }
 }

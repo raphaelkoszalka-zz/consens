@@ -100,7 +100,6 @@ class WoStehenSieComponenent extends Component {
     }
 
     render() {
-
         const { season } = this.state;
 
         return (

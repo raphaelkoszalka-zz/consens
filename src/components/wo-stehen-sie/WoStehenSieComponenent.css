@@ -4,35 +4,90 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+#seasonsWrapper {
+    height: 100%;
+}
 
 #WoStehenSieComponenent .col-md-6 {
     height: 55%;
 }
 
 #removePadding {
-    padding-left: 0;
+    margin-left: -30px !important;
+}
+
+.seasonBlock {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.seasonBlock:hover {
+    cursor: pointer;
+}
+
+.seasonIcon {
+    width: 35%;
+    margin: 0 auto;
 }
 
 #spring {
-    background: #7AB317;
+    background: radial-gradient(rgba(122,179,23, 0.3),rgba(122,179,23, 0.7));
     width: 100%;
     height: 100%;
+}
+#spring:hover {
+    background: rgba(122,179,23,1);
 }
 
 #summer {
-    background: #FA6900;
+    background: radial-gradient(rgba(250,105,0, 0.3),rgba(250,105,0, 0.7));
     width: 100%;
     height: 100%;
+}
+#summer:hover {
+    background: rgba(250,105,0,1);
 }
 
 #autumn {
-    background: #BF4D28;
+    background: radial-gradient(rgba(191,77,40, 0.3),rgba(191,77,40, 0.7));
     width: 100%;
     height: 100%;
 }
+#autumn:hover {
+    background: rgba(191,77,40,1);
+}
 
 #winter {
-    background: #8AC7DE;
+    background: radial-gradient(rgba(138,199,222, 0.3),rgba(138,199,222, 0.7));
     width: 100%;
     height: 100%;
+}
+#winter:hover {
+    background: rgba(138,199,222,1);
+}
+
+
+#stripes-container {
+    padding-top: 15px;
+}
+
+#light-blue {
+    width: 70%;
+    height: 75px;
+    z-index: 1;
+    background-color: #107FC9;
+    position: absolute;
+    right: 0;
+}
+
+#dark-blue {
+    width: 55%;
+    height: 75px;
+    margin-top: 37.5px;
+    right: 0;
+    z-index: 2;
+    background-color: #0E4EAD;
+    position: absolute;
 }

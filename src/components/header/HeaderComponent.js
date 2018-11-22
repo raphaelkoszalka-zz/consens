@@ -15,17 +15,17 @@ class HeaderComponent extends Component {
 
     scrollToHome() {
         const home = document.getElementById('root');
-        this.scroller.scrollToResolver(home);
+        this.scroller.scrollToResolver(home, null);
     }
 
     scrollToConsens() {
         const consensSection = document.getElementById('consensComponent');
-        this.scroller.scrollToResolver(consensSection, true);
+        this.scroller.scrollToResolver(consensSection, 20);
     }
 
     scrollToWoStehenSie() {
         const WoStehenSieSection = document.getElementById('WoStehenSieComponenent');
-        this.scroller.scrollToResolver(WoStehenSieSection, true);
+        this.scroller.scrollToResolver(WoStehenSieSection, null);
     }
 
     render() {

@@ -1,11 +1,11 @@
 class Scroller {
 
-    scrollToResolver(elem, top) {
+    scrollToResolver(elem, McGyverism) {
 
-        let jump = parseInt(elem.getBoundingClientRect().top * .2) + 2;
+        let jump = parseInt(elem.getBoundingClientRect().top * .2);
 
-        if(top) {
-            jump -= 2;
+        if (McGyverism) {
+            jump -= McGyverism;
         }
 
         document.body.scrollTop += jump + 2.5;

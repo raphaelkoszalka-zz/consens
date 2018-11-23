@@ -7,8 +7,8 @@ class CoverComponent extends Component {
 
         return (
             <section id="coverSection">
-                <div id="cover" />
-                <div id="coverOverlay">
+                <div id="cover" className="wow slideInLeft"  />
+                <div id="coverOverlay" className="wow slideInLeft">
                     <div className="col-md-12">
                         <h1 className="text-center">
                             Ihr Nutzen ist unser Ziel
@@ -25,7 +25,7 @@ class CoverComponent extends Component {
                         </p>
                     </div>
                 </div>
-                <div id="coverShadow" />
+                <div id="coverShadow" className="wow slideInRight" />
             </section>
         );
 

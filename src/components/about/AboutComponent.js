@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './AboutComponent.css';
 
 class AboutComponent extends Component {
+
+    componentDidMount() {}
+
     render() {
         return (
             <section id="consensComponent">
@@ -22,7 +25,7 @@ class AboutComponent extends Component {
                             </p>
                         </div>
                     </div>
-                    <div className="col-md-6" id="stripes-container">
+                    <div className="col-md-6 slideInRight" id="stripes-container">
                         <div id="light-blue" />
                         <div id="dark-blue" />
                     </div>

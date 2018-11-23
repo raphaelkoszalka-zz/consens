@@ -4,6 +4,7 @@ import CoverComponent from './components/cover/CoverComponent';
 import HeaderComponent from './components/header/HeaderComponent';
 import AboutComponent from './components/about/AboutComponent';
 import WoStehenSieComponenent from './components/wo-stehen-sie/WoStehenSieComponenent';
+import DienstleistungenComponent from './components/dienstleistungen/DienstleistungenComponent';
 
 class App extends Component {
 
@@ -14,6 +15,7 @@ class App extends Component {
                 <CoverComponent />
                 <AboutComponent />
                 <WoStehenSieComponenent />
+                <DienstleistungenComponent />
             </div>
         );
     }

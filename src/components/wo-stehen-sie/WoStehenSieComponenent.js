@@ -103,7 +103,7 @@ class WoStehenSieComponenent extends Component {
         const { season } = this.state;
 
         return (
-            <section id="WoStehenSieComponenent">
+            <section id="WoStehenSieComponent">
                 <div className="col-md-6">
                     <div id="seasonsWrapper"
                          onMouseOut={ () =>  this.changeSeason('outside') }

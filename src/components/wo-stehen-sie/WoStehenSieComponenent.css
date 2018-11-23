@@ -1,4 +1,4 @@
-#WoStehenSieComponenent {
+#WoStehenSieComponent {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -8,7 +8,7 @@
     height: 100%;
 }
 
-#WoStehenSieComponenent .col-md-6 {
+#WoStehenSieComponent .col-md-6 {
     height: 55%;
 }
 
@@ -67,12 +67,9 @@
 #winter:hover {
     background: rgba(138,199,222,1);
 }
-
-
 #stripes-container {
     padding-top: 15px;
 }
-
 #light-blue {
     width: 70%;
     height: 75px;
@@ -81,7 +78,6 @@
     position: absolute;
     right: 0;
 }
-
 #dark-blue {
     width: 55%;
     height: 75px;

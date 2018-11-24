@@ -10,6 +10,8 @@ class DienstleistungenComponent extends Component {
             position : 1
         };
         this.navigateToNextSlider = this.navigateToNextSlider.bind(this);
+        this.setActiveNavigationBall = this.setActiveNavigationBall.bind(this);
+        this.navigateToSlider = this.navigateToSlider.bind(this);
     }
 
     static createDienstleistungenOne() {
@@ -20,7 +22,7 @@ class DienstleistungenComponent extends Component {
                 'secondParagraph' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non sapien lectus. Vestibulum eget mauris porta, pellentesque dui vitae, cursus ante.'
             },
             coverColumn : {
-                'title_one' : 'Lorem Ipsum ',
+                'title_one' : 'Lorem One ',
                 'title_two' : 'consectetur adipiscing',
                 'background' : './dienstleistungen/dienstleistungen-1.png'
             }
@@ -30,12 +32,12 @@ class DienstleistungenComponent extends Component {
     static createDienstleistungenTwo() {
         return {
             contentColumn : {
-                'title' : 'Cursus Ante',
+                'title' : 'Cursus Two',
                 'firstParagraph' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non sapien lectus. Vestibulum eget mauris porta, pellentesque dui vitae, cursus ante.',
                 'secondParagraph' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non sapien lectus. Vestibulum eget mauris porta, pellentesque dui vitae, cursus ante.'
             },
             coverColumn : {
-                'title_one' : 'Cursus Ante ',
+                'title_one' : 'Cursus Two ',
                 'title_two' : 'dolor sit amet',
                 'background' : './dienstleistungen/dienstleistungen-2.png'
             }
@@ -50,21 +52,39 @@ class DienstleistungenComponent extends Component {
                 'secondParagraph' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non sapien lectus. Vestibulum eget mauris porta, pellentesque dui vitae, cursus ante.'
             },
             coverColumn : {
-                'title_one' : 'Dolor Sit ',
+                'title_one' : 'Dolor Three ',
                 'title_two' : 'adipiscing elit',
                 'background' : './dienstleistungen/dienstleistungen-3.png'
             }
         }
     }
 
+    componentDidMount() {
+        this.setActiveNavigationBall();
+    }
+
+    setActiveNavigationBall() {
+        const { position } = this.state;
+        document.getElementById('serviceBall_' + position).classList.toggle('navigationBallActive');
+    }
+
+    navigateToSlider(position) {
+        this.setState( { position : position });
+        setTimeout(() => this.navigateToNextSlider());
+    }
+
     navigateToNextSlider() {
         const position = this.state['position'];
+        const navigationBalls = document.getElementsByClassName('navigationBall');
+
+        Array.from(navigationBalls).forEach( (nav) => nav.classList.remove('navigationBallActive'));
 
         if (position === 1) {
             this.setState({
                 dienstleistungen : DienstleistungenComponent.createDienstleistungenTwo(),
                 position: 2
             });
+            setTimeout(() => this.setActiveNavigationBall());
             return;
         }
 
@@ -73,6 +93,7 @@ class DienstleistungenComponent extends Component {
                 dienstleistungen : DienstleistungenComponent.createDienstleistungenThree(),
                 position: 3
             });
+            setTimeout(() => this.setActiveNavigationBall());
             return;
         }
 
@@ -80,6 +101,7 @@ class DienstleistungenComponent extends Component {
             dienstleistungen : DienstleistungenComponent.createDienstleistungenOne(),
             position: 1
         });
+        setTimeout(() => this.setActiveNavigationBall());
     }
 
     render() {
@@ -101,9 +123,9 @@ class DienstleistungenComponent extends Component {
                             <p>{ dienstleistungen['contentColumn']['secondParagraph'] }</p>
                         </div>
                         <div id="servicesNavigationWrapper">
-                            <div className="navigationBall" />
-                            <div className="navigationBall" />
-                            <div className="navigationBall" />
+                            <div onClick={() => this.navigateToSlider(0)} className="navigationBall" id="serviceBall_1" />
+                            <div onClick={() => this.navigateToSlider(1)} className="navigationBall" id="serviceBall_2" />
+                            <div onClick={() => this.navigateToSlider(2)} className="navigationBall" id="serviceBall_3" />
                         </div>
                     </div>
                     <div id="DienstleistungenCover" style={coverStyle}>

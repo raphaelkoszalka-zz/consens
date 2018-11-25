@@ -4,8 +4,8 @@ class Scroller {
 
         let jump = parseInt(elem.getBoundingClientRect().top * .2);
 
-        document.body.scrollTop += jump + 2.5;
-        document.documentElement.scrollTop += jump + 2.5;
+        document.body.scrollTop += jump - 1.5;
+        document.documentElement.scrollTop += jump;
 
         if (!elem.lastjump || elem.lastjump > Math.abs(jump)) {
             elem.lastjump = Math.abs(jump);

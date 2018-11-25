@@ -4,7 +4,7 @@ import './ContactComponent.css';
 class ContactComponent extends Component {
     render() {
         return (
-            <h1>cover</h1>
+            <section id="contactComponent"></section>
         );
     }
 }

@@ -6,6 +6,7 @@ import ConsensComponent from './components/consens/ConsensComponent';
 import WoStehenSieComponenent from './components/wo-stehen-sie/WoStehenSieComponenent';
 import DienstleistungenComponent from './components/dienstleistungen/DienstleistungenComponent';
 import FAQComponent from './components/faq/FAQComponent';
+import ContactComponent from './components/contact/ContactComponent';
 
 class App extends Component {
 
@@ -18,6 +19,7 @@ class App extends Component {
                 <WoStehenSieComponenent />
                 <DienstleistungenComponent />
                 <FAQComponent />
+                <ContactComponent />
             </div>
         );
     }

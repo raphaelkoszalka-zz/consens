@@ -22,11 +22,11 @@ class HeaderComponent extends Component {
                     <div id="headerWrapper">
                         <div id="headerComponent">
                             <div className="col-xs-3">
-                                <img src="./consensBrand.png" id="consensBrand" alt=""/>
+                                <img src="./consensBrand.png" id="consensBrand" alt="ConSenS" onClick={ () => this.scrollTo('root')}/>
                             </div>
                             <div className="col-xs-9">
                                 <ul id="headerDesktopMenu" className="hidden-xs hidden-sm hidden-md">
-                                    <li id="contactButton">Kontakt</li>
+                                    <li onClick={ () => this.scrollTo('contactComponent')} id="contactButton">Kontakt</li>
                                     <li onClick={ () => this.scrollTo('FAQComponent')}>FAQ</li>
                                     <li onClick={ () => this.scrollTo('DienstleistungenComponent')}>Dienstleistungen</li>
                                     <li onClick={ () => this.scrollTo('WoStehenSieComponent')}>Wo stehen Sie?</li>

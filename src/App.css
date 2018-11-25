@@ -23,24 +23,29 @@ h1,h2,h3,h4,h5,h6,p {
 
 ::-webkit-scrollbar-track {
     background-color: #FFF;
+    z-index: 2000;
 }
 
 ::-webkit-scrollbar {
     width: 7px;
     background-color: #FFF;
+    z-index: 2000;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #0F55B4;
+    z-index: 2000;
 }
 
 ::-moz-selection {
     background:#0F55B4;
     color: whitesmoke;
+    z-index: 2000;
 }
 ::selection {
     background:#0F55B4;
     color: whitesmoke;
+    z-index: 2000;
 }
 
 .btn-consens {

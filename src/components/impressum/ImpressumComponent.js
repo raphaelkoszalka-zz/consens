@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './FooterComponent.css';
+import './ImpressumComponent.css';
 
-class FooterComponent extends Component {
+class ImpressumComponent extends Component {
     render() {
         return (
             <h1>cover</h1>
@@ -9,4 +9,4 @@ class FooterComponent extends Component {
     }
 }
 
-export default FooterComponent;
+export default ImpressumComponent;

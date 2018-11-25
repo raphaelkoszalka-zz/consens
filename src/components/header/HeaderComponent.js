@@ -8,30 +8,11 @@ class HeaderComponent extends Component {
 
     constructor() {
         super();
-        this.scrollToConsens = this.scrollToConsens.bind(this);
-        this.scrollToHome = this.scrollToHome.bind(this);
-        this.scrollToWoStehenSie = this.scrollToWoStehenSie.bind(this);
-        this.scrollToDienstleistungen = this.scrollToDienstleistungen.bind(this);
+        this.scrollTo = this.scrollTo.bind(this);
     }
 
-    scrollToHome() {
-        const home = document.getElementById('root');
-        this.scroller.scrollToResolver(home, null);
-    }
-
-    scrollToConsens() {
-        const consensSection = document.getElementById('consensComponent');
-        this.scroller.scrollToResolver(consensSection, 20);
-    }
-
-    scrollToWoStehenSie() {
-        const WoStehenSieSection = document.getElementById('WoStehenSieComponent');
-        this.scroller.scrollToResolver(WoStehenSieSection, null);
-    }
-
-    scrollToDienstleistungen() {
-        const DienstleistungenSection = document.getElementById('DienstleistungenComponent');
-        this.scroller.scrollToResolver(DienstleistungenSection, null);
+    scrollTo(elm) {
+        this.scroller.scrollToResolver(document.getElementById(elm));
     }
 
     render() {
@@ -46,10 +27,11 @@ class HeaderComponent extends Component {
                             <div className="col-xs-9">
                                 <ul id="headerDesktopMenu" className="hidden-xs hidden-sm hidden-md">
                                     <li id="contactButton">Kontakt</li>
-                                    <li onClick={this.scrollToDienstleistungen}>Dienstleistungen</li>
-                                    <li onClick={this.scrollToWoStehenSie}>Wo stehen Sie?</li>
-                                    <li onClick={this.scrollToConsens}>ConSenS</li>
-                                    <li onClick={this.scrollToHome}>Home</li>
+                                    <li onClick={ () => this.scrollTo('FAQComponent')}>FAQ</li>
+                                    <li onClick={ () => this.scrollTo('DienstleistungenComponent')}>Dienstleistungen</li>
+                                    <li onClick={ () => this.scrollTo('WoStehenSieComponent')}>Wo stehen Sie?</li>
+                                    <li onClick={ () => this.scrollTo('consensComponent')}>ConSenS</li>
+                                    <li onClick={ () => this.scrollTo('root')}>Home</li>
                                 </ul>
                             </div>
                         </div>

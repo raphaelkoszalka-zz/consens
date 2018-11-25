@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './AboutComponent.css';
+import './ConsensComponent.css';
 
-class AboutComponent extends Component {
+class ConsensComponent extends Component {
 
     componentDidMount() {}
 
@@ -61,4 +61,4 @@ class AboutComponent extends Component {
     }
 }
 
-export default AboutComponent;
+export default ConsensComponent;

@@ -46,9 +46,11 @@ li {
 li:hover {
     color: #333333;
     cursor: pointer;
-    font-weight: bold !important;
 }
 
+.activeQuestion {
+    color: #333333;
+}
 
 #answers {
     height: 100%;
@@ -66,6 +68,4 @@ li:hover {
     box-shadow: 5px 5px rgba(255,255,255, 0.4);
     padding: 15px;
 }
-
-
 

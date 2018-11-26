@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './CoverComponent.css';
+import { WOW } from 'wowjs';
 
 class CoverComponent extends Component {
-
     render() {
 
         return (

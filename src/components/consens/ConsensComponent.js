@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import './ConsensComponent.css';
+import {WOW} from "wowjs";
 
 class ConsensComponent extends Component {
 
-    componentDidMount() {}
+    componentDidMount() {
+        if (typeof window !== 'undefined') {
+            const wow = new WOW({ live: false });
+            wow.init();
+        }
+    }
 
     render() {
         return (
@@ -26,7 +32,7 @@ class ConsensComponent extends Component {
                         </div>
                     </div>
                     <div className="col-md-6 slideInRight" id="stripes-container">
-                        <div id="light-blue" />
+                        <div id="light-blue" className="slideInRight" />
                         <div id="dark-blue" />
                     </div>
                 </div>

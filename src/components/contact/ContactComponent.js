@@ -20,8 +20,8 @@ class ContactComponent extends Component {
                                     Adresse
                                 </h4>
                                 <p>
-                                    Bornstraße 18
-                                    61352 Bad Homburg</p>
+                                    Bornstraße 18 - 61352 Bad Homburg
+                                </p>
                                 <hr/>
                                 <h4>
                                     <img src="./phone.svg" alt="Adresse"/>

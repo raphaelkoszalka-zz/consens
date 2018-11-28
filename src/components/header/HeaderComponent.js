@@ -13,10 +13,33 @@ class HeaderComponent extends Component {
 
     componentDidMount() {
         HeaderComponent.setActiveMenu('root');
-        HeaderComponent.handleScroll();
+        window.addEventListener("resize", HeaderComponent.handleScroll, false);
+        window.addEventListener("scroll", HeaderComponent.handleScroll, false);
     }
 
     static handleScroll() {
+        const elements = document.querySelectorAll("[data-reveal][data-reveal='true']");
+        const length = elements.length;
+
+        debugger;
+
+        for(let count = 0; count < length; count++) {
+            let offsetParentTop = 0;
+            let temp = elements[count];
+            do {
+                if(!isNaN(temp.offsetTop)) {
+                    offsetParentTop += temp.offsetTop;
+                }
+            } while(temp = temp.offsetParent);
+
+            let pageYOffset = window.pageYOffset;
+            let viewportHeight = window.innerHeight;
+
+            if(offsetParentTop > pageYOffset && offsetParentTop < pageYOffset + viewportHeight) {
+                console.log(elements[count].className + " is visible");
+            }
+        }
+
     }
 
     static setActiveMenu(active) {

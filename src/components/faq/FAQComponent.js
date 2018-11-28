@@ -137,7 +137,7 @@ class FAQComponent extends Component {
         const { answer } = this.state;
 
         return (
-            <section id="FAQComponent">
+            <section id="FAQComponent" data-reveal="true">
                 <div id="FAQOverlay">
                     <div className="row">
                         <div className="col-md-3" id="questions">

@@ -60,6 +60,12 @@ h1,h2,h3,h4,h5,h6,p {
     background-color: #FFF;
     color: #07093D;
 }
+.btn-consens-xs {
+    padding: 10px !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    border-radius: 5px !important;
+}
 
 .btn-consens-invert {
     padding: 21px;

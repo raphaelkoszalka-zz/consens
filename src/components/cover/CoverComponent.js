@@ -6,7 +6,7 @@ class CoverComponent extends Component {
     render() {
 
         return (
-            <section id="coverSection">
+            <section id="coverSection" data-reveal="true">
                 <div id="cover" className="wow slideInLeft"  />
                 <div id="coverOverlay" className="wow slideInLeft">
                     <div className="col-md-12">

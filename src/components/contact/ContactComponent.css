@@ -8,6 +8,7 @@
     height: 100%;
     top: 0;
     left: 0;
+    padding-top: 160px;
     background: radial-gradient(at bottom, rgba(239,239,239,0.7), rgba(239,239,239,1));
 }
 #contactComponent .row {

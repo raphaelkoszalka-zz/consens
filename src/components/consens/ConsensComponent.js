@@ -13,7 +13,7 @@ class ConsensComponent extends Component {
 
     render() {
         return (
-            <section id="consensComponent">
+            <section id="consensComponent" data-reveal="true">
                 <div className="row">
                     <div className="col-md-6">
                         <div className='col-md-12'>

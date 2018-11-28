@@ -115,7 +115,7 @@ class DienstleistungenComponent extends Component {
 
         return (
             <section>
-                <section id="DienstleistungenComponent">
+                <section id="DienstleistungenComponent" data-reveal="true">
                     <div id="DienstleistungenText">
                         <div id="contentWrapper">
                             <h1>{ dienstleistungen['contentColumn']['title'] }</h1>

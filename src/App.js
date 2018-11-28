@@ -7,10 +7,26 @@ import WoStehenSieComponenent from './components/wo-stehen-sie/WoStehenSieCompon
 import DienstleistungenComponent from './components/dienstleistungen/DienstleistungenComponent';
 import FAQComponent from './components/faq/FAQComponent';
 import ContactComponent from './components/contact/ContactComponent';
+import LoaderComponent from "./components/loader/LoaderComponent";
 
 class App extends Component {
 
+    constructor() {
+        super();
+        this.state = {  isLoading: true }
+    }
+
+    componentDidMount() {
+        setTimeout(() => this.setState( { isLoading: false }), 500);
+    }
+
     render() {
+        const { isLoading } = this.state;
+
+        if(isLoading) {
+            return(<LoaderComponent />);
+        }
+
         return (
             <div className="App">
                 <HeaderComponent />

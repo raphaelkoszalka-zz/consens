@@ -1,7 +1,21 @@
 import React, { Component } from 'react';
 import './CoverComponent.css';
+import Scroller from "../../services/ScrollerService";
 
 class CoverComponent extends Component {
+
+    scroller = new Scroller();
+
+    constructor() {
+        super();
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        console.log('handling click');
+        this.scroller.scrollToResolver(document.getElementById('consensComponent'));
+    }
+
     render() {
         return (
             <section id="coverSection" data-reveal="true">
@@ -17,7 +31,7 @@ class CoverComponent extends Component {
                             ('Entscheidungsvorbereitung') hinaus
                         </h4>
                         <p className="text-center">
-                            <button className="btn btn-consens">
+                            <button className="btn btn-consens above-all" onClick={() => this.handleClick}>
                                 Erfahren Sie mehr
                             </button>
                         </p>

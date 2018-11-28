@@ -7,7 +7,13 @@ class ContactComponent extends Component {
             <section id="contactComponent">
                 <div id="contactComponentOverlay">
                     <div className="col-md-3">
-
+                        <h3>Adresse</h3>
+                        <h5>Bornstraße 18
+                            61352 Bad Homburg</h5>
+                        <hr/>
+                        <button className="btn btn-block btn-consens-invert btn-consens-xs">
+                            Impressum
+                        </button>
                     </div>
                     <div className="col-md-9">
                         <input type="text" className="form-control" placeholder="Name" />

@@ -9,11 +9,14 @@
     top: 0;
     left: 0;
     padding-top: 160px;
-    background: radial-gradient(at bottom, rgba(239,239,239,0.7), rgba(239,239,239,1));
+    background: radial-gradient(at bottom, rgba(239,239,239,0.9), rgba(239,239,239,1));
 }
 #contactComponent .row {
     height: 100%;
 }
 #contactComponent .col-md-6 {
     height: 100%;
+}
+#contactComponentOverlay h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
 }

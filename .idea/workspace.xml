@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64c685ff-688a-4f05-82fa-3c790bb68c01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/consens/ConsensComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/consens/ConsensComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/contact/ContactComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/ContactComponent.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/contact/ContactComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/ContactComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cover/CoverComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cover/CoverComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dienstleistungen/DienstleistungenComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dienstleistungen/DienstleistungenComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/faq/FAQComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/faq/FAQComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/HeaderComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/wo-stehen-sie/WoStehenSieComponenent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wo-stehen-sie/WoStehenSieComponenent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,18 +52,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="4999" />
+          <entry key="css" value="5039" />
           <entry key="html" value="136" />
-          <entry key="js" value="7412" />
+          <entry key="js" value="7492" />
           <entry key="md" value="1" />
           <entry key="svg" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="4999" />
+          <entry key="CSS" value="5039" />
           <entry key="HTML" value="136" />
-          <entry key="JavaScript" value="7412" />
+          <entry key="JavaScript" value="7492" />
           <entry key="Markdown" value="1" />
           <entry key="SVG" value="22" />
         </counts>
@@ -106,11 +98,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/contact/ContactComponent.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="43">
+              <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -118,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/contact/ContactComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="192">
+              <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -127,10 +119,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="98">
               <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
             </state>
           </provider>
@@ -192,9 +184,9 @@
         <option value="$PROJECT_DIR$/src/components/dienstleistungen/DienstleistungenComponent.js" />
         <option value="$PROJECT_DIR$/src/components/faq/FAQComponent.js" />
         <option value="$PROJECT_DIR$/src/components/header/HeaderComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/contact/ContactComponent.css" />
-        <option value="$PROJECT_DIR$/src/components/contact/ContactComponent.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/components/contact/ContactComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/contact/ContactComponent.css" />
       </list>
     </option>
   </component>
@@ -266,7 +258,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543413038813" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543413463188" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mattos_fe" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -324,18 +316,18 @@
       <workItem from="1543147936535" duration="9150000" />
       <workItem from="1543226664704" duration="310000" />
       <workItem from="1543228644254" duration="6759000" />
-      <workItem from="1543409382620" duration="3655000" />
+      <workItem from="1543409382620" duration="4079000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121207000" />
+    <option name="totallyTimeSpent" value="121631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="25" width="1327" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2373146" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2373146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -352,7 +344,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.1990212" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4420881" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -633,27 +625,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/contact/ContactComponent.css">
+    <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="98">
+          <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/contact/ContactComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="192">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
+    <entry file="file://$PROJECT_DIR$/src/components/contact/ContactComponent.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+        <state relative-caret-position="43">
+          <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
         </state>
       </provider>
     </entry>

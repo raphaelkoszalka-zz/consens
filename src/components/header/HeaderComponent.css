@@ -54,7 +54,11 @@ header {
     background: #0F55B4;
     color: #FFF !important;
 }
-#contactButton {
-    background: #0F55B4;
+#contactComponentButton {
+    background: #062248;
+    color: #FFF !important;
+}
+.activeButton {
+    background: #0F55B4 !important;
     color: #FFF !important;
 }

@@ -11,8 +11,21 @@ class HeaderComponent extends Component {
         this.scrollTo = this.scrollTo.bind(this);
     }
 
+    componentDidMount() {
+        HeaderComponent.setActiveMenu('root');
+    }
+
+    static setActiveMenu(active) {
+        const navigationBalls = document.getElementsByClassName('buttonsList');
+        if(navigationBalls) {
+            Array.from(navigationBalls).forEach( (nav) => nav.classList.remove('activeButton'));
+            document.getElementById( active + 'Button' ).classList.toggle('activeButton');
+        }
+    }
+
     scrollTo(elm) {
         this.scroller.scrollToResolver(document.getElementById(elm));
+        HeaderComponent.setActiveMenu(elm);
     }
 
     render() {
@@ -26,12 +39,48 @@ class HeaderComponent extends Component {
                             </div>
                             <div className="col-xs-9">
                                 <ul id="headerDesktopMenu" className="hidden-xs hidden-sm hidden-md">
-                                    <li onClick={ () => this.scrollTo('contactComponent')} id="contactButton">Kontakt</li>
-                                    <li onClick={ () => this.scrollTo('FAQComponent')}>FAQ</li>
-                                    <li onClick={ () => this.scrollTo('DienstleistungenComponent')}>Dienstleistungen</li>
-                                    <li onClick={ () => this.scrollTo('WoStehenSieComponent')}>Wo stehen Sie?</li>
-                                    <li onClick={ () => this.scrollTo('consensComponent')}>ConSenS</li>
-                                    <li onClick={ () => this.scrollTo('root')}>Home</li>
+                                    <li
+                                        className="buttonsList"
+                                        onClick={ () => this.scrollTo('contactComponent')}
+                                        id="contactComponentButton"
+                                    >
+                                        Kontakt
+                                    </li>
+                                    <li
+                                        className="buttonsList"
+                                        onClick={ () => this.scrollTo('FAQComponent')}
+                                        id="FAQComponentButton"
+                                    >
+                                        FAQ
+                                    </li>
+                                    <li
+                                        className="buttonsList"
+                                        onClick={ () => this.scrollTo('DienstleistungenComponent')}
+                                        id="DienstleistungenComponentButton"
+                                    >
+                                        Dienstleistungen
+                                    </li>
+                                    <li
+                                        className="buttonsList"
+                                        onClick={ () => this.scrollTo('WoStehenSieComponent')}
+                                        id="WoStehenSieComponentButton"
+                                    >
+                                        Wo stehen Sie?
+                                    </li>
+                                    <li
+                                        className="buttonsList"
+                                        onClick={ () => this.scrollTo('consensComponent')}
+                                        id="consensComponentButton"
+                                    >
+                                        ConSenS
+                                    </li>
+                                    <li
+                                        className="buttonsList"
+                                        onClick={ () => this.scrollTo('root')}
+                                        id="rootButton"
+                                    >
+                                        Home
+                                    </li>
                                 </ul>
                             </div>
                         </div>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './ConsensComponent.css';
-import {WOW} from "wowjs";
 import Scroller from "../../services/ScrollerService";
 
 class ConsensComponent extends Component {
@@ -18,13 +17,6 @@ class ConsensComponent extends Component {
         if(items) {
             Array.from(items).forEach( (nav) => nav.classList.remove('activeButton'));
             document.getElementById( active + 'Button' ).classList.toggle('activeButton');
-        }
-    }
-
-    componentDidMount() {
-        if (typeof window !== 'undefined') {
-            const wow = new WOW({ live: false });
-            wow.init();
         }
     }
 

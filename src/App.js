@@ -57,7 +57,7 @@ class App extends Component {
                     </div>
                 </div>
                 <FAQComponent id="faqApp" />
-                <div className="call-to-action">
+                <div className="call-to-action" id="kontaktLine">
                     <div className="col-md-10 col-md-offset-1">
                         <div className="line" />
                     </div>

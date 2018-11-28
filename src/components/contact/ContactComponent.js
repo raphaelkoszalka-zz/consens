@@ -10,7 +10,7 @@ class ContactComponent extends Component {
                         <div className="col-md-10 col-md-offset-1">
                             <div className="col-md-12">
                                 <h1 className="text-center">
-                                    Kontakt
+                                    Nehmen Sie Kontakt mit uns auf
                                 </h1>
                                 <hr/>
                             </div>

@@ -8,12 +8,21 @@ class CoverComponent extends Component {
 
     constructor() {
         super();
-        this.handleClick = this.handleClick.bind(this);
+        this.handleScroll = this.handleScroll.bind(this);
     }
 
-    handleClick() {
-        console.log('handling click');
+    // move this static function into a service
+    static setActiveMenu(active) {
+        const items = document.getElementsByClassName('buttonsList');
+        if(items) {
+            Array.from(items).forEach( (nav) => nav.classList.remove('activeButton'));
+            document.getElementById( active + 'Button' ).classList.toggle('activeButton');
+        }
+    }
+
+    handleScroll() {
         this.scroller.scrollToResolver(document.getElementById('consensComponent'));
+        CoverComponent.setActiveMenu('consensComponent');
     }
 
     render() {
@@ -31,7 +40,7 @@ class CoverComponent extends Component {
                             ('Entscheidungsvorbereitung') hinaus
                         </h4>
                         <p className="text-center">
-                            <button className="btn btn-consens above-all" onClick={() => this.handleClick}>
+                            <button className="btn btn-consens above-all" onClick={this.handleScroll}>
                                 Erfahren Sie mehr
                             </button>
                         </p>

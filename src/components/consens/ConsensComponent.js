@@ -1,14 +1,36 @@
 import React, { Component } from 'react';
 import './ConsensComponent.css';
 import {WOW} from "wowjs";
+import Scroller from "../../services/ScrollerService";
 
 class ConsensComponent extends Component {
+
+    scroller = new Scroller();
+
+    constructor() {
+        super();
+        this.handleScroll = this.handleScroll.bind(this);
+    }
+
+    // move this static function into a service
+    static setActiveMenu(active) {
+        const items = document.getElementsByClassName('buttonsList');
+        if(items) {
+            Array.from(items).forEach( (nav) => nav.classList.remove('activeButton'));
+            document.getElementById( active + 'Button' ).classList.toggle('activeButton');
+        }
+    }
 
     componentDidMount() {
         if (typeof window !== 'undefined') {
             const wow = new WOW({ live: false });
             wow.init();
         }
+    }
+
+    handleScroll() {
+        this.scroller.scrollToResolver(document.getElementById('contactComponent'));
+        ConsensComponent.setActiveMenu('contactComponent');
     }
 
     render() {
@@ -46,7 +68,9 @@ class ConsensComponent extends Component {
                             <p>
                                 Ein Konzept für alle, die etwas bewegen wollen.
                             </p>
-                            <button className="btn btn-consens-invert">Lorem Ipsum</button>
+                            <button onClick={this.handleScroll} className="btn btn-consens-invert">
+                                Kontaktieren Sie uns
+                            </button>
                         </div>
                     </div>
                 </div>

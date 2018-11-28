@@ -1,33 +1,37 @@
 import React, { Component } from 'react';
 import './ConsensComponent.css';
-import {WOW} from "wowjs";
+import Loadercomponent from '../loader/LoaderComponent';
 
 class ConsensComponent extends Component {
 
+    constructor() {
+        super();
+        this.state = { isLoading: true }
+    }
+
     componentDidMount() {
-        if (typeof window !== 'undefined') {
-            const wow = new WOW({ live: false });
-            wow.init();
-        }
+        setTimeout(() => this.setState( { isLoading: false }), 500 );
     }
 
     render() {
+
+        const { isLoading } = this.state;
+
+        if(isLoading) {
+            return(<Loadercomponent />);
+        }
+
         return (
             <section id="consensComponent">
                 <div className="row">
                     <div className="col-md-6">
                         <div className='col-md-12'>
                             <h1>
-                                Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit.
+                                Beratung - Coaching -
+                                InterimsManagement.
                             </h1>
                             <p>
-                                Sed facilisis iaculis ornare.
-                                Etiam scelerisque ligula in faucibus molestie.
-                                Donec a blandit sem, eget aliquet augue.
-                                Cras non metus in erat viverra fringilla eu ut eros.
-                                In eget sapien in augue tristique aliquam non eget nisi.
-                                Morbi aliquet volutpat odio sed auctor.
+                                Wir legen vor Ort Hand an und 'schenken' Ihnen damit UnternehmerZeit indem wir als Team aus erfahrenen Unternehmern die gleichen Ziele wie Sie verfolgen (ConSenS = Zielkonvergenz) und auch umsetzen ( ConSenS = mit Sinn).
                             </p>
                         </div>
                     </div>
@@ -45,7 +49,7 @@ class ConsensComponent extends Component {
                             </div>
                         </div>
                         <div className="col-md-6" id="text-wrapper">
-                            <h1>Praesent consequat in tortor</h1>
+                            <h1>Erfahrung + Verantwortung + Umsetzung</h1>
                             <p>
                                 Duis mattis nunc ut consequat egestas.
                                 Praesent semper mattis leo, in pretium tortor vestibulum non.
@@ -53,12 +57,10 @@ class ConsensComponent extends Component {
                                 nec facilisis turpis consequat ut.
                             </p>
                             <p>
-                                Duis mattis nunc ut consequat egestas.
-                                Praesent semper mattis leo, in pretium tortor vestibulum non.
-                                Duis efficitur dolor lectus,
-                                nec facilisis turpis consequat ut.
+                                Das Ergebnis zählt - deshalb sind erfolgsorientierte Komponenten Bestandteile unseres Vergütungssystems.
+                                Ein Konzept für alle, die etwas bewegen wollen.
                             </p>
-                            <button className="btn btn-consens-invert">Gangsta Paradise</button>
+                            <button className="btn btn-consens-invert">Lorem Ipsum</button>
                         </div>
                     </div>
                 </div>

@@ -32,7 +32,14 @@ header {
 #consensBrand:hover {
     cursor: pointer;
 }
-
+#consensBrandBkg {
+    width: 150px;
+    height: 50px;
+    background-image: url('../../images/consensBrand.png');
+    background-position: center center;
+    background-size: cover;
+    margin-top: 5px;
+}
 #headerDesktopMenu {
     display: inline-block;
     float: right;

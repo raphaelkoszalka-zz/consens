@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './DienstleistungenComponent.css';
+import LoaderComponent from "../loader/LoaderComponent";
 
 class DienstleistungenComponent extends Component {
 
@@ -7,7 +8,8 @@ class DienstleistungenComponent extends Component {
         super();
         this.state =  {
             dienstleistungen: DienstleistungenComponent.createDienstleistungenOne(),
-            position : 1
+            position : 1,
+            isLoading :  true
         };
         this.navigateToNextSlider = this.navigateToNextSlider.bind(this);
         this.setActiveNavigationBall = this.setActiveNavigationBall.bind(this);
@@ -24,7 +26,7 @@ class DienstleistungenComponent extends Component {
             coverColumn : {
                 'title_one' : 'Lorem One ',
                 'title_two' : 'consectetur adipiscing',
-                'background' : './dienstleistungen/dienstleistungen-1.png'
+                'background' : '../services/dienstleistungen-1.png'
             }
         }
     }
@@ -39,7 +41,7 @@ class DienstleistungenComponent extends Component {
             coverColumn : {
                 'title_one' : 'Cursus Two ',
                 'title_two' : 'dolor sit amet',
-                'background' : './dienstleistungen/dienstleistungen-2.png'
+                'background' : '../services/dienstleistungen-2.png'
             }
         }
     }
@@ -54,13 +56,16 @@ class DienstleistungenComponent extends Component {
             coverColumn : {
                 'title_one' : 'Dolor Three ',
                 'title_two' : 'adipiscing elit',
-                'background' : './dienstleistungen/dienstleistungen-3.png'
+                'background' : '../services/dienstleistungen-3.png'
             }
         }
     }
 
     componentDidMount() {
-        this.setActiveNavigationBall();
+        setTimeout(() => {
+            this.setState( { isLoading: false });
+            this.setActiveNavigationBall();
+        }, 500);
     }
 
     setActiveNavigationBall() {
@@ -105,7 +110,11 @@ class DienstleistungenComponent extends Component {
     }
 
     render() {
-        const { dienstleistungen } = this.state;
+        const { dienstleistungen, isLoading } = this.state;
+
+        if (isLoading) {
+            return(<LoaderComponent />);
+        }
 
         const coverStyle = {
             backgroundImage : 'url(' +dienstleistungen['coverColumn']['background'] + ')',
@@ -140,7 +149,7 @@ class DienstleistungenComponent extends Component {
                             <h4>consectetur adipiscing </h4>
                             <h4>cursus ante</h4>
                             <div onClick={this.navigateToNextSlider} id="dienstleistungen-light-blue">
-                                <img src="./next.svg" alt=""/>
+                                <img src="../next.svg" alt=""/>
                             </div>
                         </div>
                     </div>

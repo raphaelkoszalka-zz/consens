@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import './FAQComponent.css';
+import LoaderComponent from "../loader/LoaderComponent";
 
 class FAQComponent extends Component {
 
     constructor() {
         super();
-        this.state = { active: 1, answer: FAQComponent.createQuestionOneMarkup() };
+        this.state = {
+            active: 1,
+            answer: FAQComponent.createQuestionOneMarkup(),
+            isLoading: true
+        };
         this.setActiveQuestion = this.setActiveQuestion.bind(this);
         this.setActiveAnswer = this.setActiveAnswer.bind(this);
     }
@@ -102,13 +107,16 @@ class FAQComponent extends Component {
     }
 
     componentDidMount() {
-        this.setActiveQuestion();
+        setTimeout(() => {
+            this.setState( { isLoading: false });
+
+            this.setActiveQuestion();
+        }, 500 );
     }
 
     setActiveQuestion() {
         const { active } = this.state;
         const navigationBalls = document.getElementsByClassName('questions');
-
         Array.from(navigationBalls).forEach( (nav) => nav.classList.remove('activeQuestion'));
         document.getElementById('question_' + active).classList.toggle('activeQuestion');
     }
@@ -132,9 +140,11 @@ class FAQComponent extends Component {
     }
 
     render() {
+        const { answer, isLoading } = this.state;
 
-
-        const { answer } = this.state;
+        if (isLoading) {
+            return(<LoaderComponent />);
+        }
 
         return (
             <section id="FAQComponent">

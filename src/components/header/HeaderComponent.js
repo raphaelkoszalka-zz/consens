@@ -1,18 +1,83 @@
 import './HeaderComponent.css';
 import React, { Component } from 'react';
-import Scroller from "../../services/ScrollerService";
+
 
 class HeaderComponent extends Component {
 
-    scroller = new Scroller();
-
-    constructor() {
-        super();
-        this.scrollTo = this.scrollTo.bind(this);
+    constructor(props) {
+        super(props);
+        this.props = props;
     }
 
-    scrollTo(elm) {
-        this.scroller.scrollToResolver(document.getElementById(elm));
+    static navigateTo(route) {
+        window.location.href = route;
+    }
+
+    static handleScroll(e) {
+        const wDelta = e.wheelDelta < 0 ? 'down' : 'up';
+        const routePath = window.location.href.substring(window.location.href.lastIndexOf("/"));
+        if (wDelta === 'down') {
+            HeaderComponent.goToNext(routePath);
+            return;
+        }
+        HeaderComponent.goToPrevious(routePath);
+    }
+
+    static goToPrevious(path) {
+        console.log(path);
+        if (path === '/') {
+            return;
+        }
+        if (path === '/kontakt') {
+            window.location.href = '/faq';
+            return;
+        }
+        if (path === '/faq') {
+            window.location.href = '/dienstleistungen';
+            return;
+        }
+        if (path === '/dienstleistungen') {
+            window.location.href = '/wo-stehen-sie';
+            return;
+        }
+        if (path === '/wo-stehen-sie') {
+            window.location.href = '/consens';
+            return;
+        }
+        window.location.href = '/';
+    }
+
+
+    static goToNext(path) {
+        console.log(path);
+        if (path === '/kontakt') {
+            return;
+        }
+        if (path === '/faq') {
+            window.location.href = '/kontakt';
+            return;
+        }
+        if (path === '/dienstleistungen') {
+            window.location.href = '/faq';
+            return;
+        }
+        if (path === '/wo-stehen-sie') {
+            window.location.href = '/dienstleistungen';
+            return;
+        }
+        if (path === '/consens') {
+            window.location.href = '/wo-stehen-sie';
+            return;
+        }
+        window.location.href = '/consens';
+    }
+
+    componentDidMount() {
+        window.addEventListener(
+            'mousewheel',
+            (e) => HeaderComponent.handleScroll(e)
+        );
+
     }
 
     render() {
@@ -22,16 +87,28 @@ class HeaderComponent extends Component {
                     <div id="headerWrapper">
                         <div id="headerComponent">
                             <div className="col-xs-3">
-                                <img src="./consensBrand.png" id="consensBrand" alt="ConSenS" onClick={ () => this.scrollTo('root')}/>
+                                <div id="consensBrandBkg" onClick={ () => HeaderComponent.navigateTo('/') } />
                             </div>
                             <div className="col-xs-9">
                                 <ul id="headerDesktopMenu" className="hidden-xs hidden-sm hidden-md">
-                                    <li onClick={ () => this.scrollTo('contactComponent')} id="contactButton">Kontakt</li>
-                                    <li onClick={ () => this.scrollTo('FAQComponent')}>FAQ</li>
-                                    <li onClick={ () => this.scrollTo('DienstleistungenComponent')}>Dienstleistungen</li>
-                                    <li onClick={ () => this.scrollTo('WoStehenSieComponent')}>Wo stehen Sie?</li>
-                                    <li onClick={ () => this.scrollTo('consensComponent')}>ConSenS</li>
-                                    <li onClick={ () => this.scrollTo('root')}>Home</li>
+                                    <li onClick={ () => HeaderComponent.navigateTo('/kontakt')} id="kontakt">
+                                        Kontakt
+                                    </li>
+                                    <li onClick={ () => HeaderComponent.navigateTo('/faq')} id="faq">
+                                        FAQ
+                                    </li>
+                                    <li onClick={ () => HeaderComponent.navigateTo('/dienstleistungen')} id="dienstleistungen">
+                                        Dienstleistungen
+                                    </li>
+                                    <li onClick={ () => HeaderComponent.navigateTo('/wo-stehen-sie')} id="wo-stehen-sie">
+                                        Wo stehen Sie?
+                                    </li>
+                                    <li onClick={ () => HeaderComponent.navigateTo('/consens')} id="consens">
+                                        ConSenS
+                                    </li>
+                                    <li onClick={ () => HeaderComponent.navigateTo('/')} id="/">
+                                        Home
+                                    </li>
                                 </ul>
                             </div>
                         </div>

@@ -1,11 +1,26 @@
 import React, { Component } from 'react';
 import './CoverComponent.css';
-import { WOW } from 'wowjs';
+import Loadercomponent from "../loader/LoaderComponent";
 
 class CoverComponent extends Component {
-    render() {
 
-        return (
+    constructor() {
+        super();
+        this.state = { isLoading: true }
+    }
+
+    componentDidMount() {
+        setTimeout(() => this.setState( { isLoading: false }), 500 );
+    }
+
+    render() {
+        const { isLoading } = this.state;
+
+        if(isLoading) {
+            return(<Loadercomponent />);
+        }
+
+        return(
             <section id="coverSection">
                 <div id="cover" className="wow slideInLeft"  />
                 <div id="coverOverlay" className="wow slideInLeft">

@@ -1,7 +1,7 @@
 #contactComponent {
-    background: url('../../images/covers/countryside.jpg') center center;
     position: relative;
 }
+
 #contactComponentOverlay {
     position: absolute;
     width: 100%;
@@ -9,7 +9,14 @@
     top: 0;
     left: 0;
     padding-top: 160px;
-    background: radial-gradient(at bottom, rgba(239,239,239,0.9), rgba(239,239,239,1));
+}
+
+#contactComponentOverlay input, textarea {
+    margin-top: 10px;
+    background-color: #EFEFEF !important;
+}
+#contactComponentOverlay button {
+     margin-top: 10px;
 }
 #contactComponent .row {
     height: 100%;
@@ -19,4 +26,20 @@
 }
 #contactComponentOverlay h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
+}
+
+#footerApp {
+    width: 100%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: #0f55b4;
+    color: #FFF;
+}
+
+#footerApp h5 {
+    margin-bottom: 0px;
+}
+
+h4 img {
+    max-height: 20px;
 }

@@ -33,10 +33,35 @@ class App extends Component {
             <div className="App">
                 <HeaderComponent />
                 <CoverComponent id="coverApp" />
+                <div className="call-to-action">
+                    <div className="col-md-10 col-md-offset-1">
+                        <div className="line" />
+                    </div>
+                </div>
                 <ConsensComponent id="consensApp" />
+                <div className="call-to-action">
+                    <div className="col-md-10 col-md-offset-1">
+                        <div className="line" />
+                    </div>
+                </div>
                 <WoStehenSieComponenent id="woStehenSieApp" />
+                <div className="call-to-action">
+                    <div className="col-md-10 col-md-offset-1">
+                        <div className="line" />
+                    </div>
+                </div>
                 <DienstleistungenComponent id="dienstleistungenApp" />
+                <div className="call-to-action">
+                    <div className="col-md-10 col-md-offset-1">
+                        <div className="line" />
+                    </div>
+                </div>
                 <FAQComponent id="faqApp" />
+                <div className="call-to-action">
+                    <div className="col-md-10 col-md-offset-1">
+                        <div className="line" />
+                    </div>
+                </div>
                 <ContactComponent id="contactApp" />
             </div>
         );

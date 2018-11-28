@@ -11,11 +11,22 @@ class WoStehenSieComponenent extends Component {
     static createIntroMarkup() {
         return(
             <div>
-                <h1>Intro</h1>
-                <p>Sed lobortis ligula metus, quis feugiat mi vestibulum ut. Suspendisse potenti. Sed nec purus bibendum, cursus ante quis, vehicula arcu. Nulla tincidunt iaculis tellus vitae egestas. </p>
-                <p>Cras euismod turpis sit amet convallis porttitor. Nullam sit amet pretium arcu. Proin interdum pulvinar tristique. </p>
-                <p>Sed blandit lobortis urna, eu molestie mauris suscipit eu. Sed orci massa, congue eget porta quis, laoreet at diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent suscipit tincidunt eros, a blandit velit egestas ut. Mauris vestibulum dictum nisl, vel sodales eros imperdiet in.</p>
-                <p>Cras euismod turpis sit amet convallis porttitor. Nullam sit amet pretium arcu. Proin interdum pulvinar tristique. </p>
+                <h1>Das Unternehmen und die Jahreszeiten</h1>
+                <p>
+                    Das Vorbild Natur – letztlich auch als älteste Erbinformation in uns – hat schon so
+                    manchen zur Übertragung auf durch Menschen geschaffene Systeme inspiriert.
+                </p>
+                <p>
+                    Der Baum hier als Symbol für Zeit, Jahreszeit, Vergänglichkeit und Neubeginn aus
+                    scheinbar „aussichtsloser Position“, als Symbol der ständigen Veränderung
+                    schlechthin, als Synonym für ein Unternehmen oder Produkt.
+                </p>
+                <p>
+                    Natürlich gibt es überall „einen Haken“: Der positive Haken ist hier, dass wir im
+                    Unternehmen an der Zeitscheibe etwas vor- oder zurückdrehen können; allerdings
+                    immer mit entsprechend hoher Management- oder sonstiger Anstrengung und es uns
+                    damit gelingen muss, „im grünen Bereich“ zu bleiben.
+                </p>
             </div>
         )
     }

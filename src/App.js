@@ -13,11 +13,13 @@ class App extends Component {
 
     constructor() {
         super();
-        this.state = {  isLoading: true }
+        this.state = { isLoading: true }
     }
 
     componentDidMount() {
-        setTimeout(() => this.setState( { isLoading: false }), 500);
+        setTimeout(() => {
+            this.setState( { isLoading: false });
+        }, 750);
     }
 
     render() {
@@ -30,16 +32,15 @@ class App extends Component {
         return (
             <div className="App">
                 <HeaderComponent />
-                <CoverComponent />
-                <ConsensComponent />
-                <WoStehenSieComponenent />
-                <DienstleistungenComponent />
-                <FAQComponent />
-                <ContactComponent />
+                <CoverComponent id="coverApp" />
+                <ConsensComponent id="consensApp" />
+                <WoStehenSieComponenent id="woStehenSieApp" />
+                <DienstleistungenComponent id="dienstleistungenApp" />
+                <FAQComponent id="faqApp" />
+                <ContactComponent id="contactApp" />
             </div>
         );
     }
-
 }
 
 export default App;

@@ -13,6 +13,10 @@ class HeaderComponent extends Component {
 
     componentDidMount() {
         HeaderComponent.setActiveMenu('root');
+        HeaderComponent.handleScroll();
+    }
+
+    static handleScroll() {
     }
 
     static setActiveMenu(active) {

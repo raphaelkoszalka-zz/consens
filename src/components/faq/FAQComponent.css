@@ -20,6 +20,10 @@
     height: 100%;
 }
 
+#FAQComponent h3 {
+    padding-left: 15px;
+}
+
 #FAQComponent .col-md-3 {
     height: 100%;
 }
@@ -32,10 +36,7 @@
     height: 100%;
     background: #FFF;
     box-shadow: 5px 5px rgba(239,239,239, 0.4), 10px 10px rgba(239,239,239, 0.3);
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding-top: 12%;
 }
 
 li {

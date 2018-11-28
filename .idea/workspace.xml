@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64c685ff-688a-4f05-82fa-3c790bb68c01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/ContactComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/ContactComponent.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/ContactComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/ContactComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cover/CoverComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cover/CoverComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/faq/FAQComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/faq/FAQComponent.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/faq/faq.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/faq/faq.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/faq/FAQComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/faq/FAQComponent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,18 +53,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="5560" />
+          <entry key="css" value="5608" />
           <entry key="html" value="136" />
-          <entry key="js" value="7890" />
+          <entry key="js" value="7900" />
           <entry key="md" value="1" />
           <entry key="svg" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="5560" />
+          <entry key="CSS" value="5608" />
           <entry key="HTML" value="136" />
-          <entry key="JavaScript" value="7890" />
+          <entry key="JavaScript" value="7900" />
           <entry key="Markdown" value="1" />
           <entry key="SVG" value="22" />
         </counts>
@@ -82,6 +78,7 @@
           <entry key="json" value="1" />
           <entry key="md" value="1" />
           <entry key="png" value="1" />
+          <entry key="rnc" value="1" />
           <entry key="svg" value="5" />
         </counts>
       </usages-collector>
@@ -93,6 +90,7 @@
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="144" />
           <entry key="Markdown" value="1" />
+          <entry key="RNG Compact" value="1" />
           <entry key="SVG" value="5" />
         </counts>
       </usages-collector>
@@ -127,8 +125,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/faq/FAQComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="142" column="57" selection-start-line="142" selection-start-column="57" selection-end-line="142" selection-end-column="57" />
+            <state relative-caret-position="190">
+              <caret line="146" column="34" selection-start-line="146" selection-start-column="34" selection-end-line="146" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -136,8 +143,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/faq/FAQComponent.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+            <state relative-caret-position="95">
+              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -194,13 +201,13 @@
         <option value="$PROJECT_DIR$/src/components/consens/ConsensComponent.js" />
         <option value="$PROJECT_DIR$/src/components/wo-stehen-sie/WoStehenSieComponenent.js" />
         <option value="$PROJECT_DIR$/src/components/dienstleistungen/DienstleistungenComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/faq/FAQComponent.js" />
         <option value="$PROJECT_DIR$/src/components/header/HeaderComponent.js" />
         <option value="$PROJECT_DIR$/src/components/contact/ContactComponent.css" />
         <option value="$PROJECT_DIR$/src/components/contact/ContactComponent.js" />
         <option value="$PROJECT_DIR$/src/components/cover/CoverComponent.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/faq/FAQComponent.js" />
         <option value="$PROJECT_DIR$/src/components/faq/FAQComponent.css" />
       </list>
     </option>
@@ -248,19 +255,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="consens" type="b2602c69:ProjectViewProjectNode" />
-              <item name="consens" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="consens" type="b2602c69:ProjectViewProjectNode" />
-              <item name="consens" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="faq" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -272,7 +266,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543425735722" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543426476092" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mattos_fe" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -330,18 +324,17 @@
       <workItem from="1543147936535" duration="9150000" />
       <workItem from="1543226664704" duration="310000" />
       <workItem from="1543228644254" duration="6759000" />
-      <workItem from="1543409382620" duration="10151000" />
+      <workItem from="1543409382620" duration="11156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127703000" />
+    <option name="totallyTimeSpent" value="128708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="25" width="1327" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2373146" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1615925" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -646,6 +639,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -655,15 +655,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/faq/FAQComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="142" column="57" selection-start-line="142" selection-start-column="57" selection-end-line="142" selection-end-column="57" />
+        <state relative-caret-position="190">
+          <caret line="146" column="34" selection-start-line="146" selection-start-column="34" selection-end-line="146" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/faq/FAQComponent.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        <state relative-caret-position="95">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>

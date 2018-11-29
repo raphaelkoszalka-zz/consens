@@ -3,40 +3,32 @@ html, body {
     width: 100%;
     overflow-x: hidden;
 }
-
 #root {
     height: 100%;
 }
-
 .App {
     height: 100%;
 }
-
 section {
     width: 100%;
     height: 100%;
 }
-
 h1,h2,h3,h4,h5,h6,p {
     font-family: 'Raleway', sans-serif !important;
 }
-
 ::-webkit-scrollbar-track {
     background-color: #FFF;
     z-index: 2000;
 }
-
 ::-webkit-scrollbar {
     width: 7px;
     background-color: #FFF;
     z-index: 2000;
 }
-
 ::-webkit-scrollbar-thumb {
     background-color: #0F55B4;
     z-index: 2000;
 }
-
 ::-moz-selection {
     background:#0F55B4;
     color: whitesmoke;
@@ -47,7 +39,6 @@ h1,h2,h3,h4,h5,h6,p {
     color: whitesmoke;
     z-index: 2000;
 }
-
 .btn-consens {
     padding: 21px;
     background-color: #0F55B4;
@@ -68,15 +59,12 @@ h1,h2,h3,h4,h5,h6,p {
     background-color: #FFF !important;
     color: #07093D !important;
 }
-
-
 .btn-consens-xs {
     padding: 10px !important;
     -webkit-border-radius: 5px !important;
     -moz-border-radius: 5px !important;
     border-radius: 5px !important;
 }
-
 .btn-consens-invert {
     padding: 21px;
     background-color: #FFF;
@@ -90,11 +78,9 @@ h1,h2,h3,h4,h5,h6,p {
     background-color: #0F55B4;
     color: #FFF;
 }
-
 .text-thin {
     font-weight: 300 !important;
 }
-
 .call-to-action {
     clear: both;
     background: -webkit-radial-gradient(rgba(255,255,255, 0.7),rgba(255,255,255, 1));
@@ -111,7 +97,6 @@ h1,h2,h3,h4,h5,h6,p {
 .above-all {
     z-index: 99999999999 !important;
 }
-
 #kontaktLine {
     margin-bottom: -55px;
 }

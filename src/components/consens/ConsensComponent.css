@@ -4,7 +4,6 @@
 #stripes-container {
     padding-top: 15px;
 }
-
 #light-blue {
     width: 100%;
     height: 75px;
@@ -12,7 +11,6 @@
     background-color: #107FC9;
     position: absolute;
 }
-
 #dark-blue {
     width: 75%;
     height: 75px;
@@ -22,11 +20,9 @@
     background-color: #0E4EAD;
     position: absolute;
 }
-
 #pics-wrapper {
     height: 400px;
 }
-
 #first-pic {
     height: 300px;
     width: 35%;
@@ -36,7 +32,6 @@
     -webkit-background-size: cover;
     background-size: cover;
 }
-
 #second-pic {
     height: 300px;
     width: 35%;
@@ -48,7 +43,6 @@
     right: 15%;
     display: inline-block;
 }
-
 #text-wrapper {
     padding-top: 75px;
 }

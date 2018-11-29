@@ -8,7 +8,6 @@
     padding-top: 0;
     position: relative;
 }
-
 #cover {
     width: 75%;
     height: 75%;
@@ -18,7 +17,6 @@
     margin: 0 auto;
     z-index: 1;
 }
-
 #coverOverlay {
     background: radial-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.5));
     border: 2px solid #EFEFEF;
@@ -33,7 +31,6 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-
 #coverShadow {
     background-color: #0F55B4;
     position: absolute;

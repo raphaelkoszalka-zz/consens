@@ -141,7 +141,7 @@ class FAQComponent extends Component {
                 <div id="FAQOverlay">
                     <div className="row">
                         <div className="col-md-3" id="questions">
-                            <h3>Häufige gestellte Fragen</h3>
+                            <h3>Häufig gestellte Fragen</h3>
                             <hr/>
                             <ul>
                                 <li onClick={() => this.setActiveAnswer(1)}><h4 className="questions" id="question_1">Lorem Ipsum?</h4></li>

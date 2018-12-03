@@ -13,7 +13,7 @@ class App extends Component {
 
     constructor() {
         super();
-        this.state = { isLoading: true }
+        this.state = { isLoading: true };
     }
 
     componentDidMount() {
@@ -24,10 +24,6 @@ class App extends Component {
 
     render() {
         const { isLoading } = this.state;
-
-        if(isLoading) {
-            return(<LoaderComponent />);
-        }
 
         return (
             <div className="App">

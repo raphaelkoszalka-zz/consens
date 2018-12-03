@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './DienstleistungenComponent.css';
-import Waypoint from 'react-waypoint';
 
 class DienstleistungenComponent extends Component {
 
@@ -13,7 +12,6 @@ class DienstleistungenComponent extends Component {
         this.navigateToNextSlider = this.navigateToNextSlider.bind(this);
         this.setActiveNavigationBall = this.setActiveNavigationBall.bind(this);
         this.navigateToSlider = this.navigateToSlider.bind(this);
-        this.handleWaypoint = this.handleWaypoint.bind(this);
     }
 
     static createDienstleistungenOne() {
@@ -106,10 +104,6 @@ class DienstleistungenComponent extends Component {
         setTimeout(() => this.setActiveNavigationBall());
     }
 
-    handleWaypoint() {
-        alert('x');
-    }
-
     render() {
         const { dienstleistungen } = this.state;
 
@@ -121,10 +115,6 @@ class DienstleistungenComponent extends Component {
 
         return (
             <section>
-                <Waypoint
-                    onEnter={this.handleWaypoint}
-                    onLeave={this.handleWaypoint}
-                />
                 <section id="DienstleistungenComponent" data-reveal="true">
                     <div id="DienstleistungenText">
                         <div id="contentWrapper">

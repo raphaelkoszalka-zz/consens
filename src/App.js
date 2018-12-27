@@ -25,6 +25,12 @@ class App extends Component {
     render() {
         const { isLoading } = this.state;
 
+        if (isLoading) {
+            return(
+                <LoaderComponent />
+            )
+        }
+
         return (
             <div className="App">
                 <HeaderComponent />

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './ConsensComponent.css';
 import Scroller from "../../services/ScrollerService";
-import Waypoint from 'react-waypoint';
 
 class ConsensComponent extends Component {
 
@@ -10,10 +9,6 @@ class ConsensComponent extends Component {
     constructor() {
         super();
         this.handleScroll = this.handleScroll.bind(this);
-    }
-
-    static handleMenu() {
-        alert('x');
     }
 
     // move this static function into a service
@@ -33,11 +28,6 @@ class ConsensComponent extends Component {
     render() {
         return (
             <section id="consensComponent" data-reveal="true">
-                <Waypoint
-                    onEnter={ConsensComponent.handleMenu}
-                    onLeave={ConsensComponent.handleMenu}
-                    debug={true}
-                />
                 <div className="row">
                     <div className="col-md-6">
                         <div className='col-md-12'>
